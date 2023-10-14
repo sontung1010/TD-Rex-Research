@@ -1,0 +1,8 @@
+prefix=/home/nvidia/tung_ws/install
+
+Name: tung_rover_test
+Description: Description of tung_rover_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,34 @@
+16:29:47 **** Incremental Build of configuration Debug for project chatter_F446RE ****
+make -j16 all 
+arm-none-eabi-g++ "../Src/mainpp.cpp" -mcpu=cortex-m4 -std=gnu++14 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F446xx -c -I../Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/mainpp.d" -MT"Src/mainpp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/mainpp.o"
+In file included from ../Inc/ros.h:39,
+                 from ../Src/mainpp.cpp:9:
+../Inc/STM32Hardware.h: In member function 'void STM32Hardware::write(uint8_t*, int)':
+../Inc/STM32Hardware.h:119:22: warning: comparison of integer expressions of different signedness: 'int' and 'long unsigned int' [-Wsign-compare]
+  119 |       int n_tail = n <= tbuflen - twind ? n : tbuflen - twind;
+      |                    ~~^~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "chatter_F446RE.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/st/STM32CubeIDE/workspace_1.12.1/chatter/STM32F446RETX_FLASH.ld" -Wl,-Map="chatter_F446RE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: chatter_F446RE.elf
+ 
+arm-none-eabi-size   chatter_F446RE.elf 
+arm-none-eabi-objdump -h -S  chatter_F446RE.elf  > "chatter_F446RE.list"
+   text	   data	    bss	    dec	    hex	filename
+  22320	    128	   4244	  26692	   6844	chatter_F446RE.elf
+Finished building: default.size.stdout
+ 
+Finished building: chatter_F446RE.list
+ 
+16:30:25 **** Incremental Build of configuration Debug for project chatter_F446RE ****
+make -j16 all 
+arm-none-eabi-size   chatter_F446RE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22320	    128	   4244	  26692	   6844	chatter_F446RE.elf
+Finished building: default.size.stdout
+ 
+16:38:54 **** Incremental Build of configuration Debug for project chatter_F446RE ****
+make -j16 all 
+arm-none-eabi-size   chatter_F446RE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22320	    128	   4244	  26692	   6844	chatter_F446RE.elf
+Finished building: default.size.stdout
+ 

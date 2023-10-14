@@ -1,0 +1,10 @@
+11:14:57 **** Incremental Build of configuration Debug for project chatter_F446RE ****
+make -j16 all 
+arm-none-eabi-size   chatter_F446RE.elf 
+   text	   data	    bss	    dec	    hex	filename
+  23056	    128	   4244	  27428	   6b24	chatter_F446RE.elf
+Finished building: default.size.stdout
+ 
+
+11:14:57 Build Finished. 0 errors, 0 warnings. (took 181ms)
+

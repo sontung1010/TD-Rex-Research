@@ -1,0 +1,11 @@
+main.c:69:6:map	1
+main.c:81:5:main	1
+main.c:132:6:SystemClock_Config	3
+main.c:180:13:MX_ADC1_Init	4
+main.c:241:13:MX_TIM2_Init	7
+main.c:302:13:MX_DMA_Init	1
+main.c:324:13:MX_GPIO_Init	1
+main.c:340:6:set_servo	1
+main.c:345:6:set_speed	1
+main.c:350:6:HAL_ADC_ConvCpltCallback	1
+main.c:360:6:Error_Handler	1
